@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metaetiquetas para conjunto de caracteres y vista -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título de la página -->
+  <title>La Riviera</title>
+  <!-- Enlaces a archivos CSS y favicon -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Encabezado (HEADER) -->
+  <header>
+    <nav>
+      <!-- Logo del restaurante -->
+      <div class="logo">
+        <img src="../assets/img/favicon.png">
+      </div>
+      <!-- Título del restaurante -->
+      <div class="titulo">
+        <h2>LA RIVIERA</h2>
+      </div>
+      <!-- Enlaces de navegación -->
+      <ul>
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li class="navegacion"><a href="views/presupuesto.html">PRESUPUESTO</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Formulario de contacto -->
+  <div class="container">
+    <form>
+      <li>
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" id="Nombre"  name="Nombre" placeholder="Escriba su nombre"
+        pattern="[A-Za-z]{3,15}" title="Escriba solo letras entre 3 y 15 caracteres" required>
+      </li><br>
+    
+      <li>
+        <label for="Apellidos">Apellidos:</label><br>
+        <input type="text"  id="Apellidos"  name="Apellidos" placeholder="Escriba sus apellidos"
+        pattern="[A-Za-z]{4,40}" title="Escriba solo letras entre 4 y 40 caracteres" required>
+      </li><br>
+    
+      <li>
+        <label for="Telefono">Telefono:</label><br>
+        <input type="text"  id="Telefono"  name="Telefono" placeholder="Escriba su numero de telefono"
+        pattern="[0-9]{9}" title="Escriba solo números del 0 al 9" required>
+      </li><br>
+    
+      <li>
+        <label for="Solicite mas informacion">Solicite mas informacion:</label><br>
+        <textarea id="Solicite mas informacion" name="Solicite mas informacion"
+        placeholder="Si desea mas información, solicítela aquí" pattern="[A-Za-z]{5,50}"
+        title="Escriba solo letras entre 5 y 50 caracteres" required></textarea>
+      </li><br>
+    
+      <li>
+        <input type="checkbox" id="privacidad" name="politica" required>
+        <label for="politicadeprivacidad">Acepta los términos</label><br>
+      </li><br>
+    
+      <ul>
+        <li>
+          <button type="reset">Borrar</button> 
+          <button type="submit">Enviar</button>
+        </li><br>
+      </ul> 
+    </form>
+  </div>
+
+  <!-- Pie de página (FOOTER) -->
+  <footer>
+    <!-- Iconos de redes sociales con enlaces -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><img src="../assets/img/facebook_logo.png"></a>
+      <a href="https://twitter.com"><img src="../assets/img/twitter_logo.png"></a>
+      <a href="https://www.instagram.com"><img src="../assets/img/Instagram_logo.png"></a>
+    </div>
+    <!-- Dirección del restaurante -->
+    <div>
+      <p>Calle Cruces, 6</p>
+    </div>
+    <!-- Descargo de responsabilidad legal -->
+    <div>
+      <p>Aviso legal</p>
+    </div>
+  </footer>
+</body>
+</html>
